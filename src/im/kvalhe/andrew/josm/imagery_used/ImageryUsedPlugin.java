@@ -24,6 +24,7 @@ class ImageryUsedUploadHook implements UploadHook {
         MainApplication.getLayerManager().getVisibleLayersInZOrder().stream()
             .filter(ImageryLayer.class::isInstance)
             .map(layer -> layer.getChangesetSourceTag())
+            .map(name -> name == "Bing" ? "Bing aerial imagery" : name)
             .distinct()
             .collect(Collectors.joining(";"));
 
