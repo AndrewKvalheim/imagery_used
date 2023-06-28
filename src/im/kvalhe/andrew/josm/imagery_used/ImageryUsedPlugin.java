@@ -8,10 +8,14 @@ import org.openstreetmap.josm.gui.MainApplication;
 import org.openstreetmap.josm.gui.layer.ImageryLayer;
 import org.openstreetmap.josm.plugins.Plugin;
 import org.openstreetmap.josm.plugins.PluginInformation;
+import org.openstreetmap.josm.spi.preferences.Config;
 
 public class ImageryUsedPlugin extends Plugin {
   public ImageryUsedPlugin(PluginInformation info) {
     super(info);
+
+    if (Config.getPref().getBoolean("upload.source.obtainautomatically", false))
+      Config.getPref().putBoolean("upload.source.obtainautomatically", false);
 
     UploadAction.registerUploadHook(new ImageryUsedUploadHook());
   }
