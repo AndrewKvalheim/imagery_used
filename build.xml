@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="imagery_used" default="dist" basedir=".">
+    <!-- About -->
+    <property name="plugin.version" value="0.0.0"/>
+    <property name="plugin.description" value="Populate imagery_used in changesets"/>
+    <property name="plugin.link" value="https://github.com/AndrewKvalheim/imagery_used"/>
+    <property name="plugin.author" value="Andrew Kvalheim"/>
+
+    <!-- Dependencies -->
+    <property name="plugin.main.version" value="18721"/>
+
+    <!-- Entry point -->
+    <property name="plugin.class" value="im.kvalhe.andrew.josm.imagery_used.ImageryUsedPlugin"/>
+
+    <import file="../build-common.xml"/>
+</project>
