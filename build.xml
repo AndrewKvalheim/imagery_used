@@ -12,5 +12,6 @@
     <!-- Entry point -->
     <property name="plugin.class" value="im.kvalhe.andrew.josm.imagery_used.ImageryUsedPlugin"/>
 
+    <!-- Build environment (via https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins) -->
     <import file="../build-common.xml"/>
 </project>
