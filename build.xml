@@ -3,7 +3,7 @@
     <!-- About -->
     <property name="plugin.version" value="0.0.1"/>
     <property name="plugin.description" value="Populate imagery_used in changesets"/>
-    <property name="plugin.link" value="https://github.com/AndrewKvalheim/imagery_used"/>
+    <property name="plugin.link" value="https://codeberg.org/AndrewKvalheim/imagery_used"/>
     <property name="plugin.author" value="Andrew Kvalheim"/>
 
     <!-- Dependencies -->
